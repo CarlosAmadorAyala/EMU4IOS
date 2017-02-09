@@ -164,24 +164,40 @@
         CGFloat texWidth = (screenSize.width / bufferSize.width);
         CGFloat texHeight = (screenSize.height / bufferSize.height);
         
-        //GALNET GRAPHICS FIX
-
-        vertices[0] = GLKVector3Make(-1.0, -1.0,  1.0); // Left  bottom front
-        vertices[1] = GLKVector3Make( 1.0, -1.0,  1.0); // Right bottom front
-        vertices[2] = GLKVector3Make( 1.0,  1.0,  1.0); // Right top    front
-        vertices[3] = GLKVector3Make(-1.0,  1.0,  1.0); // Left  top    front
-        vertices[4] = GLKVector3Make(-1.0, -1.0, -1.0); // Left  bottom back
-        vertices[5] = GLKVector3Make( 1.0, -1.0, -1.0); // Right bottom back
-        vertices[6] = GLKVector3Make( 1.0,  1.0, -1.0); // Right top    back
-        vertices[7] = GLKVector3Make(-1.0,  1.0, -1.0); // Left  top    back
-        
-        //GALNET GRAPHICS FIX END
-        
-        textureCoordinates[0] = GLKVector2Make(0.0f, texHeight); // Left bottom
-        textureCoordinates[1] = GLKVector2Make(texWidth, texHeight); // Right bottom
-        textureCoordinates[2] = GLKVector2Make(texWidth, 0.0f); // Right top
-        textureCoordinates[3] = GLKVector2Make(0.0f, 0.0f); // Left top
-        
+        NSString* checkCore = self.emulatorCore.systemIdentifier;
+        if ([checkCore isEqualToString:@"com.provenance.psx"]) {
+            vertices[0] = GLKVector3Make(-1.0, -1.0,  1.0); // Left  bottom
+            vertices[1] = GLKVector3Make( 1.0, -1.0,  1.0); // Right bottom
+            vertices[2] = GLKVector3Make( 1.0,  1.0,  1.0); // Right top
+            vertices[3] = GLKVector3Make(-1.0,  1.0,  1.0); // Left  top
+            vertices[4] = GLKVector3Make(-1.0, -1.0, -1.0); // Left  bottom back
+            vertices[5] = GLKVector3Make( 1.0, -1.0, -1.0); // Right bottom back
+            vertices[6] = GLKVector3Make( 1.0,  1.0, -1.0); // Right top    back
+            vertices[7] = GLKVector3Make(-1.0,  1.0, -1.0); // Left  top    back
+            
+            textureCoordinates[0] = GLKVector2Make(0.0f, texHeight); // Left bottom
+            textureCoordinates[1] = GLKVector2Make(texWidth*1.1f, texHeight); // Right bottom
+            textureCoordinates[2] = GLKVector2Make(texWidth*1.1f, 0.0f); // Right top
+            textureCoordinates[3] = GLKVector2Make(0.0f, 0.0f); // Left top
+            
+        }
+        else {
+            vertices[0] = GLKVector3Make(-1.0, -1.0,  1.0); // Left  bottom front
+            vertices[1] = GLKVector3Make( 1.0, -1.0,  1.0); // Right bottom front
+            vertices[2] = GLKVector3Make( 1.0,  1.0,  1.0); // Right top    front
+            vertices[3] = GLKVector3Make(-1.0,  1.0,  1.0); // Left  top    front
+            vertices[4] = GLKVector3Make(-1.0, -1.0, -1.0); // Left  bottom back
+            vertices[5] = GLKVector3Make( 1.0, -1.0, -1.0); // Right bottom back
+            vertices[6] = GLKVector3Make( 1.0,  1.0, -1.0); // Right top    back
+            vertices[7] = GLKVector3Make(-1.0,  1.0, -1.0); // Left  top    back
+            
+            //GALNET GRAPHICS FIX END
+            
+            textureCoordinates[0] = GLKVector2Make(0.0f, texHeight); // Left bottom
+            textureCoordinates[1] = GLKVector2Make(texWidth, texHeight); // Right bottom
+            textureCoordinates[2] = GLKVector2Make(texWidth, 0.0f); // Right top
+            textureCoordinates[3] = GLKVector2Make(0.0f, 0.0f); // Left top	
+        }
         //KEPT TEXTURES SAME AS THIS FORCES SCREEN RES ON OTHER EMULATORS
         
         int vertexIndices[6] = {

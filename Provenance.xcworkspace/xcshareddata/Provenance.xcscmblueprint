@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D4DEDC187B36BA33A179CB510D1BABF971AF89AF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D4DEDC187B36BA33A179CB510D1BABF971AF89AF" : 9223372036854775807,
+    "9BFB396087D0BDD1A8684EEE49B51DFD3A478D5C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "03DB5459-2398-4B60-A32B-86D2E12A6302",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D4DEDC187B36BA33A179CB510D1BABF971AF89AF" : "Provenance-galnet-mednafen\/",
+    "9BFB396087D0BDD1A8684EEE49B51DFD3A478D5C" : "Provenance"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Provenance",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Provenance.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/github.com\/jasarien\/Provenance.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9BFB396087D0BDD1A8684EEE49B51DFD3A478D5C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mathewrennie\/Provenance-galnet-mednafen.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D4DEDC187B36BA33A179CB510D1BABF971AF89AF"
+    }
+  ]
+}

@@ -59,19 +59,19 @@ static inline OEIntSize OEIntSizeMake(int width, int height)
 {
     return (OEIntSize){ width, height };
 }
-static inline BOOL OEIntSizeEqualToSize(OEIntSize size1, OEIntSize size2)
-{
-    return size1.width == size2.width && size1.height == size2.height;
-}
-static inline BOOL OEIntSizeIsEmpty(OEIntSize size)
-{
-    return size.width == 0 || size.height == 0;
-}
+//static inline BOOL OEIntSizeEqualToSize(OEIntSize size1, OEIntSize size2)
+//{
+//    return size1.width == size2.width && size1.height == size2.height;
+//}
+//static inline BOOL OEIntSizeIsEmpty(OEIntSize size)
+//{
+//    return size.width == 0 || size.height == 0;
+//}
 
-static inline OEIntRect OEIntRectMake(int x, int y, int width, int height)
-{
-    return (OEIntRect){ (OEIntPoint){ x, y }, (OEIntSize){ width, height } };
-}
+//static inline OEIntRect OEIntRectMake(int x, int y, int width, int height)
+//{
+//    return (OEIntRect){ (OEIntPoint){ x, y }, (OEIntSize){ width, height } };
+//}
 
 static MDFNGI *game;
 static MDFN_Surface *surf;
@@ -977,7 +977,7 @@ static void emulation_run()
         
         mednafenCoreModule = @"pce";
         mednafenCoreAspect = OEIntSizeMake(256 * (8.0/7.0), 240);
-        //mednafenCoreAspect = OEIntSizeMake(game->nominal_width, game->nominal_height);
+       // mednafenCoreAspect = OEIntSizeMake(game->nominal_width, game->nominal_height);
         sampleRate         = 48000;
     }
     else if([[self systemIdentifier] isEqualToString:@"com.provenance.pcfx"])
@@ -997,6 +997,7 @@ static void emulation_run()
         mednafenCoreAspect = OEIntSizeMake(3, 2);
         //mednafenCoreAspect = OEIntSizeMake(game->nominal_width, game->nominal_height);
         sampleRate         = 44100;
+        
     }
     else if([[self systemIdentifier] isEqualToString:@"com.provenance.vb"])
     {
@@ -1099,7 +1100,7 @@ static void emulation_run()
 
 - (NSTimeInterval)frameInterval
 {
-    return mednafenCoreTiming ?: 60;
+    return mednafenCoreTiming ?: 59.92;
 }
 
 # pragma mark - Video

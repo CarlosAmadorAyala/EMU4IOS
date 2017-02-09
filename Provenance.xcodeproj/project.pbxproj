@@ -213,6 +213,8 @@
 		42BC83A917E6775E00E9A607 /* PVGameLibrarySectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC83A817E6775E00E9A607 /* PVGameLibrarySectionHeaderView.m */; };
 		42E63AE917E12ECE00FE7098 /* PVSNESControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E63AE817E12ECE00FE7098 /* PVSNESControllerViewController.m */; };
 		42E63F0617DE78AB005802B0 /* UIImage+Scaling.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E63F0517DE78AB005802B0 /* UIImage+Scaling.m */; };
+		457A946A1E4CC8CE00F258BE /* PVMednafen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B340E6091E088CF900AD0E8B /* PVMednafen.framework */; };
+		457A946B1E4CC8CE00F258BE /* PVMednafen.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B340E6091E088CF900AD0E8B /* PVMednafen.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7556CF7A19DC15C1007F8F97 /* Default.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7556CF7919DC15C1007F8F97 /* Default.xib */; };
 		AA9B6EDE1D70981000422E5F /* PVPSXControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9B6EDD1D70981000422E5F /* PVPSXControllerViewController.m */; };
 		AA9B6EDF1D70981000422E5F /* PVPSXControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9B6EDD1D70981000422E5F /* PVPSXControllerViewController.m */; };
@@ -225,8 +227,6 @@
 		B328937E1E0B87960090B97A /* PVVBControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B328937C1E0B87960090B97A /* PVVBControllerViewController.m */; };
 		B32F46341D6A8BD70085BA9F /* PVSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32F46331D6A8BD70085BA9F /* PVSupport.framework */; };
 		B32F46351D6A8BD70085BA9F /* PVSupport.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B32F46331D6A8BD70085BA9F /* PVSupport.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B340E6071E088CF300AD0E8B /* PVMednafen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B340E5FE1E088CA700AD0E8B /* PVMednafen.framework */; };
-		B340E6081E088CF300AD0E8B /* PVMednafen.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B340E5FE1E088CA700AD0E8B /* PVMednafen.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B340E60A1E088CF900AD0E8B /* PVMednafen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B340E6091E088CF900AD0E8B /* PVMednafen.framework */; };
 		B340E60B1E088CF900AD0E8B /* PVMednafen.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B340E6091E088CF900AD0E8B /* PVMednafen.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B36DE7CA1D6B80CA002EE3ED /* PVAtari7800ControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36DE7C91D6B80CA002EE3ED /* PVAtari7800ControllerViewController.m */; };
@@ -350,7 +350,7 @@
 			files = (
 				B3D2E39C1D6E8BCD0058544D /* PVSupport.framework in Embed Frameworks */,
 				B3C9D4AF1DEA74390068D057 /* PVGB.framework in Embed Frameworks */,
-				B340E6081E088CF300AD0E8B /* PVMednafen.framework in Embed Frameworks */,
+				457A946B1E4CC8CE00F258BE /* PVMednafen.framework in Embed Frameworks */,
 				B311698D1D70A3A200D7AECA /* ProSystem.framework in Embed Frameworks */,
 				B3AD689E1D6EA6450021B949 /* PicoDrive.framework in Embed Frameworks */,
 				B3C9D55E1DEA85C60068D057 /* PVSNES.framework in Embed Frameworks */,
@@ -673,7 +673,7 @@
 				1A4869D617C8D5450019F6D2 /* CoreData.framework in Frameworks */,
 				1A47C94417BC1BC400C27644 /* AudioToolbox.framework in Frameworks */,
 				1ADDA5B417B30CD7008A7ADD /* GLKit.framework in Frameworks */,
-				B340E6071E088CF300AD0E8B /* PVMednafen.framework in Frameworks */,
+				457A946A1E4CC8CE00F258BE /* PVMednafen.framework in Frameworks */,
 				B3C9D5211DEA787D0068D057 /* PVGBA.framework in Frameworks */,
 				1A3D431E17B2F01F004DFFFC /* OpenGLES.framework in Frameworks */,
 				B3C9D55D1DEA85C60068D057 /* PVSNES.framework in Frameworks */,

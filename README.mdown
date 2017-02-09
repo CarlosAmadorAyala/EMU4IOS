@@ -17,6 +17,8 @@ I was looking for a word with a similar meaning to Genesis and came across Prove
 
 ###Systems currently supported by Provenance:
 
+- Sony
+    - PSX (Playstation 1)
 - Sega
     - SG-1000
     - Master System
